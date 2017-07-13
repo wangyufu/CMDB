@@ -17,3 +17,4 @@ CMDB
 	4、客户端MadkingClient/bin/NedStark.py ，执行时可以看到帮助信息    
 	
 ![](https://github.com/wangyufu/CMDB/blob/master/static/1.png)
+![](https://github.com/wangyufu/CMDB/blob/master/static/2.png)
