@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block b %}
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#server" data-toggle="tab">
+                服务器
+            </a>
+        </li>
+        <li><a href="#ram" data-toggle="tab">
+            内存
+        </a></li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="server">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>服务器类型</th>
+                    <th>创建方式</th>
+                    <th>hosted_on</th>
+                    <th>型号</th>
+                    <th>raid类型IP</th>
+                    <th>操作系统类型</th>
+                    <th>发型版本</th>
+                    <th>操作系统版本</th>
+                </tr>
+                </thead>
+
+
+                {% for obj in server_obj %}
+                    <tr>
+                        <td>{{ obj.get_sub_asset_type_display }}</td>
+                        <td>{{ obj.created_by }}</td>
+                        <td>{{ obj.hosted_on }}</td>
+                        <td>{{ obj.model }}</td>
+                        <td>{{ obj.raid_type }}</td>
+                        <td>{{ obj.os_type }}</td>
+                        <td>{{ obj.os_distribution }}</td>
+                        <td>{{ obj.os_release }}</td>
+                    </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+        <div class="tab-pane fade" id="ram">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <td>SN号</td>
+                    <td>内存型号</td>
+                    <td>插槽</td>
+                    <td>内存大小(MB)</td>
+                    <td>备注</td>
+                    <td>创建时间</td>
+                    <td>修改时间</td>
+                </tr>
+                </thead>
+
+
+                {% for obj in ram_obj %}
+                    <tr>
+                        <td>{{ obj.sn }}</td>
+                        <td>{{ obj.model }}</td>
+                        <td>{{ obj.slot }}</td>
+                        <td>{{ obj.capacity }}</td>
+                        <td>{{ obj.memo }}</td>
+                        <td>{{ obj.create_date }}</td>
+                        <td>{{ obj.update_date }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

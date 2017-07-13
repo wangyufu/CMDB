@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block b %}
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Asset type</th>
+            <th>Name</th>
+            <th>资产SN号</th>
+            <th>制造商</th>
+            <th>管理IP</th>
+            <th>合同</th>
+            <th>购买时间</th>
+            <th>过保修期</th>
+            <th>价格</th>
+            <th>所属业务线</th>
+            <th>tags</th>
+            <th>资产管理员</th>
+            <th>IDC机柜</th>
+            <th>Status</th>
+            <th>备注</th>
+            <th>查看</th>
+        </tr>
+        </thead>
+
+
+        {% for obj in asset_obj %}
+            <tr>
+                <td>{{ obj.get_asset_type_display }}</td>
+                <td>{{ obj.name }}</td>
+                <td>{{ obj.sn }}</td>
+                <td>{{ obj.manufactory }}</td>
+                <td>{{ obj.management_ip }}</td>
+                <td>{{ obj.contract }}</td>
+                <td>{{ obj.trade_date }}</td>
+                <td>{{ obj.expire_date }}</td>
+                <td>{{ obj.price }}</td>
+                <td>{{ obj.business_unit }}</td>
+                <td>{{ obj.tags.name }}</td>
+                <td>{{ obj.admin }}</td>
+                <td>{{ obj.cabinet }}</td>
+                <td>{{ obj.get_status_display }}</td>
+                <td>{{ obj.memo }}</td>
+                <td><a href="/asset/tables/detail_{{ obj.id }}" type="button" class="btn btn-success">查看{{ obj.id }}</a></td>
+            </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}
