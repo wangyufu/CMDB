@@ -1,17 +1,19 @@
 CMDB
 ==
-×÷Õß:ÍõÓî·ò    
+ä½œè€…:çŽ‹å®‡å¤«    
 
-## ³ÌÐò½éÉÜ:     
-    Ê¹ÓÃpython3+¡¢django1.11£¬Windows»òLinux»·¾³Ê¹ÓÃ£»    
-	ÊµÏÖÁË¿Í»§¶ËÖ÷»úÐÅÏ¢ÉÏ´«µ½·þÎñÆ÷µÄÊý¾Ý¿â£»
-	·þÎñ¶ËÉóºË³É¹¦£¬Ìí¼Óµ½×Ê²ú±íÖÐ£»
-	¿Í»§¶ËÖ÷»úÐÅÏ¢ÔÙ´ÎÉÏ´«µ½·þÎñÆ÷Ê±¸üÐÂ×Ê²ú±í£»
-	restful api½Ó¿Ú£»
-	webµÄÇ°¶ËÕ¹Ê¾¡£
+## ç¨‹åºä»‹ç»:     
+    ä½¿ç”¨python3+ã€django1.11ï¼ŒWindowsæˆ–LinuxçŽ¯å¢ƒä½¿ç”¨ï¼›    
+	å®žçŽ°äº†å®¢æˆ·ç«¯ä¸»æœºä¿¡æ¯ä¸Šä¼ åˆ°æœåŠ¡å™¨çš„æ•°æ®åº“ï¼›
+	æœåŠ¡ç«¯å®¡æ ¸æˆåŠŸï¼Œæ·»åŠ åˆ°èµ„äº§è¡¨ä¸­ï¼›
+	å®¢æˆ·ç«¯ä¸»æœºä¿¡æ¯å†æ¬¡ä¸Šä¼ åˆ°æœåŠ¡å™¨æ—¶æ›´æ–°èµ„äº§è¡¨ï¼›
+	restful apiæŽ¥å£ï¼›
+	webçš„å‰ç«¯å±•ç¤ºã€‚
 
-## ³ÌÐòÊ¹ÓÃ£º     
-	1¡¢´´½¨cmdb¿â£¬µ¼Èëcmdb.sql      
-	2¡¢ÔËÐÐ·þÎñ£¬ÓÎÀÀÆ÷´ò¿ª/asset£¬Ö÷Ò³    
-	3¡¢/admin £¬¹ÜÀíÔ±ÉóºË¹¦ÄÜÔÚadminÀïÐ´µÄ ÃÜÂëwangyufu/wangyufu1992    
-	4¡¢¿Í»§¶ËMadkingClient/bin/NedStark.py £¬Ö´ÐÐÊ±¿ÉÒÔ¿´µ½°ïÖúÐÅÏ¢    
+## ç¨‹åºä½¿ç”¨ï¼š     
+	1ã€åˆ›å»ºcmdbåº“ï¼Œå¯¼å…¥cmdb.sql      
+	2ã€è¿è¡ŒæœåŠ¡ï¼Œæ¸¸è§ˆå™¨æ‰“å¼€/assetï¼Œä¸»é¡µ    
+	3ã€/admin ï¼Œç®¡ç†å‘˜å®¡æ ¸åŠŸèƒ½åœ¨adminé‡Œå†™çš„ å¯†ç wangyufu/wangyufu1992    
+	4ã€å®¢æˆ·ç«¯MadkingClient/bin/NedStark.py ï¼Œæ‰§è¡Œæ—¶å¯ä»¥çœ‹åˆ°å¸®åŠ©ä¿¡æ¯    
+	
+![](https://github.com/wangyufu/CMDB/blob/master/static/1.png)
